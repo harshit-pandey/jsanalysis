@@ -86,7 +86,7 @@ jQuery.gamma = function(x){
     return false;
 }
 
-/*Example: Round to third decimal place
+/*Example: Round to fourth decimal place
  jQuery.precision(3.14159,1e-3)
  3.1412
  */
@@ -362,7 +362,7 @@ jQuery.hypgeomcdf = function(N, m, n, x){
     return sum;
 }
 
-/* Example Prrobability an exponentially distributed variable with parameter l=.5 is less than 2
+/* Example Probability an exponentially distributed variable with parameter l=.5 is less than 2
  jQuery.exponentialcdf(.5,2)
  0.8646647167633873
  */
@@ -380,6 +380,7 @@ jQuery.poisson = function(l, x){
 
 /* Example Probability an possionv ariable with parameter l=2 is less than or equal 3
  jQuery.poissoncdf(2,3)
+ 0.8571234604985472
  */
 jQuery.poissoncdf = function(l, x){
     if (x < 0) 
