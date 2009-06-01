@@ -1,0 +1,140 @@
+factorial of 5
+jQuery.factorial(5)
+120
+
+combinations of 5 from 52 items
+jQuery.combination(52,5)
+2598960
+
+permutations of 5 from 52 items
+jQuery.permutation(52,5)
+311875200
+
+gamma function at .5
+jQuery.gamma(.5)
+1.7724538509055165
+
+Round to fourth decimal place
+jQuery.precision(3.14159,1e-3)
+3.1412
+
+Minimum value of an array
+jQuery.minimum([1,2,3])
+1
+
+Maximum value of an array
+jQuery.minimum([1,2,3])
+3
+
+Example: Mean value of an array
+jQuery.minimum([1,2,3])
+2
+ 
+Example: Sum of an array
+jQuery.minimum([1,2,3])
+6
+
+Mode of an array
+jQuery.mode([1,2,2,3])
+2
+
+Example: Median of an array
+jQuery.median([1,2,3,6,9])
+3
+ 
+Quartiles of an array
+jQuery.quartiles([1,2,3,6,9,3,1,2,5])
+[1,3,5]
+
+Variance of an array
+jQuery.variance([1,2,3,6,9,3,1,2,5])
+6.246913580246913
+
+Mean deviation of an array
+jQuery.meandev([1,2,3,6,9,3,1,2,5])
+2.074074074074074
+
+Standard deviation of an array
+jQuery.stdev([1,2,3,6,9,3,1,2,5])
+2.499382639822665]
+
+Coveriance of two arrays
+jQuery.covariance([1,2,3,6,9,3,1,2,5],[2,3,5,2,5,7,8,9,6])
+-1.1234567901234567
+
+Correlation coefficient of two arrays
+jQuery.corr_coeff([1,2,3,6,9,3,1,2,5],[2,3,5,2,5,7,8,9,6])
+-0.18780499704286396
+
+Probability of (x<.5) of Uniform distibution with parameters 0,2
+jQuery.uniform(0,2,.5)
+0.25
+
+Probability of (x=2) of binomial distibution of 5 trials with probility .5
+jQuery.binomial(5,.5,2)
+0.3125
+
+Probability of (x<=2) of binomial distibution of 5 trials with probility .5
+jQuery.binomialcdf(5,.5,2)
+0.5
+
+Probability of exactly 1 success before 2nd failure of an event with probability 1/2
+jQuery.negbin(2,1/2,1)
+0.25
+
+
+Probability of 1 success or before 2nd failure of an event with probability 1/2
+jQuery.negbincdf(2,1/2,1)
+0.5
+
+Probability that variable following the gamma distribution with paramters k=2,t=1 is less than 2
+jQuery.gammacdf(2,1,2)
+0.59399415029016
+
+Probability of selecting 5 items of a type from 50 items in 10 trials if 25 items are of the type
+hypgeom(50,25,10,5)
+0.27479755252772714
+
+Probability of selecting 5 or less items of a type from 50 items in 10 trials if 25 items are of the type
+hypgeom(50,25,10,5)
+0.27479755252772714
+
+Probability an exponentially distributed variable with parameter l=.5 is less than 2
+jQuery.exponentialcdf(.5,2)
+0.8646647167633873
+
+Probability an possion variable with parameter l=2 is less than or equal 3
+jQuery.poisson(2,3)
+0.1804470443154836
+
+Probability an possionv ariable with parameter l=2 is less than or equal 3
+jQuery.poissoncdf(2,3)
+0.8571234604985472
+
+Probability an normal variable with mean 5 and standard deviation 2 is less than 9
+jQuery.normcdf(4,2,9)
+0.97104020272604
+
+Return a least squares function using data points from two arrays 
+jQuery.linear_reg_eq(7,3,8,3,2],[13,7,15,7,3])
+function anonymous(x) { return 0.5416666666666666 * x + -0.27500000000000036; }
+
+Example return an exponential least squares fit function using data points from two arrays 
+jQuery.exp_reg_eq([48,10,63,8,5],[7,3,8,3,2])
+function anonymous(x) { return Math.exp(0.4171835379487424 * x) * 2.4160060454307533; }
+
+Find the zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000  iterations
+jQuery.secantmethod(function f(x) {return x*x*x-5},0,5,1e-15,1000)
+1.709975946676697
+
+Approximate the derivative of f(x)=x^3-5 at the point 2 using step size of 1e-3
+jQuery.fivept(function (x){return x*x*x-5},2,1e-3)
+11.99999999999912
+
+Find the critical points of cos(x) on the interval 3,4
+jQuery.fcrit(function (x){return Math.cos(x)}, 3,4)
+3.14159265359
+
+Find the numerical integral sin(x^2) from 0,5 to 1e-15
+jQuery.asr(function (x){return Math.sin(x*x)},0,5, 1e-15)
+0.52791728116532
