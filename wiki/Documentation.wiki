@@ -1,4 +1,4 @@
-factorial of 5
+factorial of 5 <br/>
 jQuery.factorial(5)
 120
 
