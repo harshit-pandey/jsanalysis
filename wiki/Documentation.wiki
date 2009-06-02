@@ -115,7 +115,7 @@ jQuery.normcdf(4,2,9)<br/>
 <br/>
 Return a least squares function using data points from two arrays <br/>
 jQuery.linear_reg_eq(7,3,8,3,2],[13,7,15,7,3])<br/>
-function anonymous(x) { return 0.5416666666666666 * x + -0.27500000000000036; }<br/>
+function anonymous(x) { return 0.5416666666666666*x + -0.27500000000000036; }<br/>
 <br/>
 Example return an exponential least squares fit function using data points from two arrays <br/>
 jQuery.exp_reg_eq([48,10,63,8,5],[7,3,8,3,2])<br/>
