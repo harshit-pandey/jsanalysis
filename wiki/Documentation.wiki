@@ -133,6 +133,6 @@ Critical points of cos(x) on the interval 3,4<br/>
 jQuery.fcrit(function (x){return Math.cos(x)}, 3,4)<br/>
 3.14159265359<br/>
 <br/>
-Numerical integral sin(x^2) from 0,5 to 1e-15<br/>
+Numerical integral of sin(x^2) from 0,5 to 1e-15<br/>
 jQuery.asr(function (x){return Math.sin(x*x)},0,5, 1e-15)<br/>
 0.52791728116532
