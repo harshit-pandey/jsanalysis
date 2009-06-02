@@ -332,7 +332,7 @@ jQuery.gammacdf = function(k, t, x){
 }
 
 /* Example: Probability of selecting 5 items of a type from 50 items in 10 trials if 25 items are of the type
- * hypgeom(50,25,10,5)
+ * jQuery.hypgeom(50,25,10,5)
  * 0.27479755252772714
  */
 jQuery.hypgeom = function(N, m, n, x){
@@ -346,8 +346,8 @@ jQuery.hypgeom = function(N, m, n, x){
 }
 
 /* Example: Probability of selecting 5 or less items of a type from 50 items in 10 trials if 25 items are of the type
- hypgeom(50,25,10,5)
- 0.27479755252772714
+ jQuery.hypgeomcdf(50,25,10,5)
+ 0.6373987762638635
  */
 jQuery.hypgeomcdf = function(N, m, n, x){
     if (x < 0) 
@@ -389,10 +389,20 @@ jQuery.poissoncdf = function(l, x){
 
 /* Example: Probability a normal variable with mean 5 and standard deviation 2 is less than 9
  jQuery.normcdf(4,2,9)
- 0.97104020272604
+ 0.9937903346742201
  */
 jQuery.normcdf = function(u, s, t){
-    return jQuery.asr(Function("x", "return Math.exp(-Math.pow(x-" + u + ",2)/Math.pow(" + s + ",2)/2)/" + s + "/Math.sqrt(2*Math.PI)"), 0, t, 1e-14);
+    if (t < u) {
+        t = u + (u - t);
+        var neg = 1
+    }
+    else 
+        var neg = 0;
+    var z = jQuery.asr(Function("x", "return Math.exp(-Math.pow(x-" + u + ",2)/Math.pow(" + s + ",2)/2)/" + s + "/Math.sqrt(2*Math.PI)"), u, t, 1e-14);
+    if (!neg) 
+        return .5 + z;
+    else 
+        return 1 - (.5 + z)
 }
 
 /* Example return a least squares function using data points from two arrays 
