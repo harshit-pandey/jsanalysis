@@ -1,20 +1,16 @@
 
 /*
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Lesser General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Lesser General Public License for more details.
-
-    You should have received a copy of the GNU Lesser General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 /*
  Example: factorial of 5
  jQuery.factorial(5)
@@ -253,7 +249,7 @@ jQuery.corr_coeff = function(arr1, arr2){
     return jQuery.covariance(arr1, arr2) / jQuery.stdev(arr1) / jQuery.stdev(arr2);
 }
 
-/*Example: Probability of (x<.5) of Uniform distibution with parameters 0,2
+/*Example: Probability of (x<.5) of uniform distibution with parameters 0,2
  jQuery.uniform(0,2,.5)
  0.25
  */
@@ -266,16 +262,16 @@ jQuery.uniformcdf = function(a, b, x){
     return 1;
 }
 
-/*Example: Probability of (x=2) of binomial distribution of 5 trials with probability .5
- jQuery.binomial(5,.5,2)
+/*Example: Probability of (x=2) of binomial distribution of 5 trials with probability 1/2
+ jQuery.binomial(5,1/2,2)
  0.3125
  */
 jQuery.binomial = function(n, p, k){
     return jQuery.combination(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
 }
 
-/*Example: Probability of (x<=2) of binomial distribution of 5 trials with probability .5
- jQuery.binomialcdf(5,.5,2)
+/*Example: Probability of (x<=2) of binomial distribution of 5 trials with probability 1/2
+ jQuery.binomialcdf(5,1/2,2)
  0.5
  */
 jQuery.binomialcdf = function(n, p, x){
@@ -438,7 +434,7 @@ jQuery.exp_reg_eq = function(arrf, arrx){
     return Function("x", "return Math.exp(" + exp_coeff + "*x)*" + exp_const);
 }
 
-/* Find the zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000 iterations
+/* Find the zero of function f(x)=x^3-5 on the interval [0,5] to a precision of 1e-15 in 1000 iterations
  jQuery.secantmethod(function f(x) {return x*x*x-5},0,5,1e-15,1000)
  1.709975946676697
  */
@@ -472,7 +468,7 @@ jQuery.fcrit = function(f, a, b){
     return jQuery.precision(jQuery.secantmethod(Function("t", "return jQuery.fivept(" + f + ",t,1e-3)"), a, b, 1e-13, 99999), 1e-12)
 }
 
-/* Find the numerical integral sin(x^2) from 0,5 to 1e-15
+/* Find the numerical integral of sin(x^2) from 0,5 to 1e-15
  jQuery.asr(function (x){return Math.sin(x*x)},0,5, 1e-15)
  0.52791728116532
  */
