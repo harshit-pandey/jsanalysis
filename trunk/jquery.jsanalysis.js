@@ -231,7 +231,7 @@ jQuery.meandev = function(arr){
 jQuery.stdev = function(arr){
     return Math.sqrt(jQuery.variance(arr));
 }
-/*Example: Coveriance of two arrays
+/*Example: Covariance of two arrays
  jQuery.covariance([1,2,3,6,9,3,1,2,5],[2,3,5,2,5,7,8,9,6])
  -1.1234567901234567
  */
