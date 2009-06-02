@@ -121,7 +121,7 @@ Exponential least squares fit function using data points from two arrays <br/>
 jQuery.exp_reg_eq({{{[48,10,63,8,5],[7,3,8,3,2]}}})<br/>
 function anonymous(x) { return Math.exp(0.4171835379487424{{{*}}}x) {{{*}}} 2.4160060454307533; }<br/>
 <br/>
-The zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000  iterations<br/>
+The zero of function f(x)=x^3-5 on the interval {{{[0,5]}} to a precision of 1e-15 in 1000  iterations<br/>
 jQuery.secantmethod(function f(x) {return x*x*x-5},0,5,1e-15,1000)<br/>
 1.709975946676697<br/>
 <br/>
