@@ -101,15 +101,15 @@ Probability an exponentially distributed variable with parameter l=.5 is less th
 jQuery.exponentialcdf(.5,2)<br/>
 0.8646647167633873<br/>
 <br/>
-Probability an possion variable with parameter l=2 is less than or equal 3<br/>
+Probability a possion variable with parameter l=2 is less than or equal 3<br/>
 jQuery.poisson(2,3)<br/>
 0.1804470443154836<br/>
 <br/>
-Probability an possion variable with parameter l=2 is less than or equal 3<br/>
+Probability a possion variable with parameter l=2 is less than or equal 3<br/>
 jQuery.poissoncdf(2,3)<br/>
 0.8571234604985472<br/>
 <br/>
-Probability an normal variable with mean 5 and standard deviation 2 is less than 9<br/>
+Probability a normal variable with mean 5 and standard deviation 2 is less than 9<br/>
 jQuery.normcdf(4,2,9)<br/>
 0.97104020272604<br/>
 <br/>
