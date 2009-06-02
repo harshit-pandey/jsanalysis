@@ -70,12 +70,12 @@ Probability of (x<.5) of uniform distribution with parameters 0,2<br/>
 jQuery.uniform(0,2,.5)<br/>
 0.25<br/>
 <br/>
-Probability of (x=2) of binomial distribution of 5 trials with probability .5<br/>
-jQuery.binomial(5,.5,2)<br/>
+Probability of (x=2) of binomial distribution of 5 trials with probability 1/2<br/>
+jQuery.binomial(5,1/2,2)<br/>
 0.3125<br/>
 <br/>
-Probability of (x<=2) of binomial distribution of 5 trials with probability .5<br/>
-jQuery.binomialcdf(5,.5,2)<br/>
+Probability of (x<=2) of binomial distribution of 5 trials with probability 1/2<br/>
+jQuery.binomialcdf(5,1/2,2)<br/>
 0.5<br/>
 <br/>
 Probability of exactly 1 success before 2nd failure of an event with probability 1/2<br/>
