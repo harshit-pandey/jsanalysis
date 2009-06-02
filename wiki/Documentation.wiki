@@ -111,7 +111,7 @@ jQuery.poissoncdf(2,3)<br/>
 <br/>
 Probability a normal variable with mean 5 and standard deviation 2 is less than 9<br/>
 jQuery.normcdf(4,2,9)<br/>
-0.97104020272604<br/>
+0.99379033467422014<br/>
 <br/>
 Least squares function using data points from two arrays <br/>
 jQuery.linear_reg_eq({{{[7,3,8,3,2],[13,7,15,7,3]}}})<br/>
