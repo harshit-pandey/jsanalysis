@@ -90,12 +90,12 @@ Probability that a variable following the gamma distribution with paramters k=2,
 jQuery.gammacdf(2,1,2)<br/>
 0.59399415029016<br/><br/>
 Probability of selecting 5 items of a type from 50 items in 10 trials if 25 items are of the type<br/>
-hypgeom(50,25,10,5)<br/>
+jQuery.hypgeom(50,25,10,5)<br/>
 0.27479755252772714<br/>
 <br/>
 Probability of selecting 5 or less items of a type from 50 items in 10 trials if 25 items are of the type<br/>
-hypgeom(50,25,10,5)<br/>
-0.27479755252772714<br/>
+jQuery.hypgeomcdf(50,25,10,5)<br/>
+0.6373987762638635<br/>
 <br/>
 Probability an exponentially distributed variable with parameter l=.5 is less than 2<br/>
 jQuery.exponentialcdf(.5,2)<br/>
