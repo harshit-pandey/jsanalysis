@@ -370,7 +370,7 @@ jQuery.exponentialcdf = function(l, x){
     return 1 - Math.exp(-1 * x);
 }
 
-/* Example Probability a possion variable with parameter l=2 is less than or equal 3
+/* Example Probability a possion variable with parameter l=2 is less than or equal to 3
  jQuery.poisson(2,3)
  0.1804470443154836
  */
@@ -378,7 +378,7 @@ jQuery.poisson = function(l, x){
     return Math.pow(l, x) * Math.exp(-l) / jQuery.factorial(x)
 }
 
-/* Example Probability a possion variable with parameter l=2 is less than or equal 3
+/* Example Probability a possion variable with parameter l=2 is less than or equal to 3
  jQuery.poissoncdf(2,3)
  0.8571234604985472
  */
