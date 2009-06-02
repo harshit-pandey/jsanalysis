@@ -26,11 +26,11 @@ Maximum value of an array<br/>
 jQuery.minimum({{{[1,2,3]}}})<br/>
 3<br/>
 <br/>
-Example: Mean value of an array<br/>
+Mean value of an array<br/>
 jQuery.minimum({{{[1,2,3]}}})<br/>
 2<br/>
 <br/>
-Example: Sum of an array<br/>
+Sum of an array<br/>
 jQuery.minimum({{{[1,2,3]}}})<br/>
 6<br/>
 <br/>
