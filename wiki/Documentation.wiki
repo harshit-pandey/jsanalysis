@@ -119,7 +119,7 @@ function anonymous(x) { return 0.5416666666666666*x + -0.27500000000000036; }<br
 <br/>
 Exponential least squares fit function using data points from two arrays <br/>
 jQuery.exp_reg_eq({{{[48,10,63,8,5],[7,3,8,3,2]}}})<br/>
-function anonymous(x) { return Math.exp(0.4171835379487424*x) * 2.4160060454307533; }<br/>
+function anonymous(x) { return Math.exp(0.4171835379487424{{{*}}}x) {{{*}}} 2.4160060454307533; }<br/>
 <br/>
 The zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000  iterations<br/>
 jQuery.secantmethod(function f(x) {return x*x*x-5},0,5,1e-15,1000)<br/>
