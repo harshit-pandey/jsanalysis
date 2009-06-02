@@ -1,16 +1,16 @@
- factorial of 5 <br/>
+Factorial of 5 <br/>
 jQuery.factorial(5) <br/>
 120 <br/>
 <br/>
-combinations of 5 from 52 items<br/>
+Combinations of 5 from 52 items<br/>
 jQuery.combination(52,5)<br/>
 2598960<br/>
 <br/>
-permutations of 5 from 52 items<br/>
+Permutations of 5 from 52 items<br/>
 jQuery.permutation(52,5)<br/>
 311875200<br/>
 <br/>
-gamma function at .5<br/>
+Gamma function at .5<br/>
 jQuery.gamma(.5)<br/>
 1.7724538509055165<br/>
 <br/>
@@ -38,7 +38,7 @@ Mode of an array<br/>
 jQuery.mode([1,2,2,3])<br/>
 2<br/>
 <br/>
-Example: Median of an array<br/>
+Median of an array<br/>
 jQuery.median([1,2,3,6,9])<br/>
 3<br/>
 <br/>
@@ -113,26 +113,26 @@ Probability an normal variable with mean 5 and standard deviation 2 is less than
 jQuery.normcdf(4,2,9)<br/>
 0.97104020272604<br/>
 <br/>
-Return a least squares function using data points from two arrays <br/>
+Least squares function using data points from two arrays <br/>
 jQuery.linear_reg_eq(7,3,8,3,2],[13,7,15,7,3])<br/>
 function anonymous(x) { return 0.5416666666666666*x + -0.27500000000000036; }<br/>
 <br/>
-Example return an exponential least squares fit function using data points from two arrays <br/>
+Exponential least squares fit function using data points from two arrays <br/>
 jQuery.exp_reg_eq([48,10,63,8,5],[7,3,8,3,2])<br/>
 function anonymous(x) { return Math.exp(0.4171835379487424 * x) * 2.4160060454307533; }<br/>
 <br/>
-Find the zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000  iterations<br/>
+The zero of function f(x)=x^3-5 on interval [0,5] to a precision of 1e-15 in 1000  iterations<br/>
 jQuery.secantmethod(function f(x) {return x*x*x-5},0,5,1e-15,1000)<br/>
 1.709975946676697<br/>
 <br/>
-Approximate the derivative of f(x)=x^3-5 at the point 2 using step size of 1e-3<br/>
+Approximate derivative of f(x)=x^3-5 at the point 2 using step size of 1e-3<br/>
 jQuery.fivept(function (x){return x*x*x-5},2,1e-3)<br/>
 11.99999999999912<br/>
 <br/>
-Find the critical points of cos(x) on the interval 3,4<br/>
+Critical points of cos(x) on the interval 3,4<br/>
 jQuery.fcrit(function (x){return Math.cos(x)}, 3,4)<br/>
 3.14159265359<br/>
 <br/>
-Find the numerical integral sin(x^2) from 0,5 to 1e-15<br/>
+Numerical integral sin(x^2) from 0,5 to 1e-15<br/>
 jQuery.asr(function (x){return Math.sin(x*x)},0,5, 1e-15)<br/>
 0.52791728116532
