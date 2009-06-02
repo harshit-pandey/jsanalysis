@@ -58,7 +58,7 @@ Standard deviation of an array<br/>
 jQuery.stdev({{{[1,2,3,6,9,3,1,2,5]}}})<br/>
 2.499382639822665<br/>
 <br/>
-Coveriance of two arrays<br/>
+Covariance of two arrays<br/>
 jQuery.covariance({{{[1,2,3,6,9,3,1,2,5]}}},{{{[2,3,5,2,5,7,8,9,6]}}})<br/>
 -1.1234567901234567<br/>
 <br/>
