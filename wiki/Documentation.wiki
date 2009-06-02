@@ -19,7 +19,7 @@ jQuery.precision(3.14159,1e-3)<br/>
 3.1412<br/>
 <br/>
 Minimum value of an array<br/>
-jQuery.minimum([1,2,3])<br/>
+jQuery.minimum({{{[1,2,3]}}})<br/>
 1<br/>
 <br/>
 Maximum value of an array<br/>
