@@ -17,7 +17,7 @@
  120
  */
 jQuery.factorial = function(n){
-    fact = 1;
+    var fact = 1;
     for (i = n; i > 0; i--) 
         fact *= i;
     return fact;
