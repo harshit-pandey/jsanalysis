@@ -87,9 +87,6 @@ jQuery.negbincdf(2,1/2,1)<br/>
 0.5<br/>
 <br/>
 Probability that a variable following the gamma distribution with paramters k=2,t=1 is less than 2<br/>
-jQuery.gammacdf(2,1,2)<br/>
-0.59399415029016<br/><br/>
-Probability of selecting 5 items of a type from 50 items in 10 trials if 25 items are of the type<br/>
 jQuery.hypgeom(50,25,10,5)<br/>
 0.27479755252772714<br/>
 <br/>
