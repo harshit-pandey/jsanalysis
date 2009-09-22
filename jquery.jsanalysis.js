@@ -317,19 +317,6 @@ jQuery.negbincdf = function(n, p, x){
     return sum;
 }
 
-/*Example: Probability that a variable following the gamma distribution with paramters k=2,t=1 is less than 2
- jQuery.gammacdf(2,1,2)
- 0.59399415029016
- */
-jQuery.gammacdf = function(k, t, x){
-    if (!(k > 0 && t > 0)) {
-        return false;
-    }
-    else {
-        f = Function("x", "return Math.pow(x," + (k - 1) + ")*Math.exp(-x)");
-    }
-    return jQuery.asr(f, 0, x / t, 1e-14) / jQuery.gamma(k);
-}
 
 /* Example: Probability of selecting 5 items of a type from 50 items in 10 trials if 25 items are of the type
  * jQuery.hypgeom(50,25,10,5)
