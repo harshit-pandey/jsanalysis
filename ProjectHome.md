@@ -1,0 +1,1 @@
+This plugin adds several mathematical analysis functions to jQuery.  Population statistics, probability distribution functions, regression equations, numerical integration and differentiation algorithms, and root finding techniques are all included.
